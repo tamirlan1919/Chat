@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="223dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Message"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bSend"
+        app:layout_constraintStart_toEndOf="@+id/bEmoji"
+        app:layout_constraintTop_toBottomOf="@+id/rcView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="@mipmap/ic_launcher_what_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/editMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/bSend"
+        android:layout_width="72dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#523634"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editMessage"
+        app:layout_constraintTop_toBottomOf="@+id/rcView"
+        app:srcCompat="@drawable/ic_baseline_send_24" />
+
+    <ImageButton
+        android:id="@+id/bEmoji"
+        android:layout_width="72dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#523634"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_emoji_emotions_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

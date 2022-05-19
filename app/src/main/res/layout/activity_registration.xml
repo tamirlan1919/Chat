@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="162dp">
+
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="#1111"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/regPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regSecondName" />
+
+    <Button
+        android:id="@+id/regButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="register"
+        android:text="Регистрация"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regPass" />
+
+    <EditText
+        android:id="@+id/regPass"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="220dp"
+        android:background="#1111"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regEmail" />
+
+    <TextView
+        android:id="@+id/textViewReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регистрация нового пользователя"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="18dp"
+        android:background="#1111"
+        android:inputType="textPersonName"
+        android:hint="Имя"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/regSecondName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReg" />
+
+    <EditText
+        android:id="@+id/regSecondName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="18dp"
+        android:background="#1111"
+        android:hint="Фамилия"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/regEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
